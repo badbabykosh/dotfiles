@@ -8,10 +8,7 @@
 #                         |_|
 # When Bash starts, it executes the commands in this script
 # http://en.wikipedia.org/wiki/Bash_(Unix_shell)
-# ====================
-# morning pages alias
-# ====================
-alias 750words='mp'
+#
 # ====================
 # File Navigation
 # ====================
@@ -24,8 +21,6 @@ export CLICOLOR=1
 # http://geoff.greer.fm/lscolors/
 # Describes what color to use for which attribute (files, folders etc.)
 export LSCOLORS=faexcxdxbxegedabagacad
-# go back one directory
-alias b='cd ..'
 # If we make a change to our bash profile we need to reload it
 alias reload="clear; source ~/.bash_profile"
 ## Tab improvements
