@@ -62,7 +62,7 @@ export HISTIGNORE="h:ls:ls *:ll:ll *:"
 # Make sublime our editor of choice
 export EDITOR="subl -w"
 # Open files with Sublime
-alias subl='open -a "Sublime Text 2"'
+alias subl='open -a "Sublime Text"'
 
 # ==================
 # Path
