@@ -63,6 +63,8 @@ export HISTIGNORE="h:ls:ls *:ll:ll *:"
 export EDITOR="subl -w"
 # Open files with Sublime
 alias subl='open -a "Sublime Text"'
+# Open files with Webstorm
+alias webstorm='open -a webstorm'
 
 # ==================
 # Path
