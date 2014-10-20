@@ -60,9 +60,9 @@ export HISTIGNORE="h:ls:ls *:ll:ll *:"
 # Sublime
 # ================
 # Make sublime our editor of choice
-export EDITOR="subl -w"
+# export EDITOR="subl -w"
 # Open files with Sublime
-alias subl='open -a "Sublime Text"'
+# alias subl='open -a "Sublime Text"'
 # Open files with Webstorm
 alias webstorm='open -a webstorm'
 
