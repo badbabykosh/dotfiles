@@ -283,5 +283,8 @@ if [ -f ~/.extra ]; then
     source ~/.extra
 fi
 
+# ======================
+# rbenv
+# ======================
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
