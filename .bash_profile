@@ -8,21 +8,32 @@
 #                         |_|
 # When Bash starts, it executes the commands in this script
 # http://en.wikipedia.org/wiki/Bash_(Unix_shell)
-#
+# ====================
+# morning pages alias
+# ====================
+alias 750words='mp'
+
 # ====================
 # File Navigation
 # ====================
 # LS lists information about files. -F includes a slash for directories.
-alias list='ls -F'
+alias ls='ls -F'
+
 # long list format including hidden files
 alias ll='ls -la'
+
 # Adds colors to LS
 export CLICOLOR=1
 # http://geoff.greer.fm/lscolors/
 # Describes what color to use for which attribute (files, folders etc.)
 export LSCOLORS=faexcxdxbxegedabagacad
+
+# go back one directory
+alias b='cd ..'
+
 # If we make a change to our bash profile we need to reload it
 alias reload="clear; source ~/.bash_profile"
+
 ## Tab improvements
 ## Might not need?
 # bind 'set completion-ignore-case on'
@@ -60,17 +71,37 @@ export HISTIGNORE="h:ls:ls *:ll:ll *:"
 # Sublime
 # ================
 # Make sublime our editor of choice
-# export EDITOR="subl -w"
-# Open files with Sublime
-# alias subl='open -a "Sublime Text"'
-# Open files with Webstorm
+# export EDITOR="subl -W"
+
+# Or my vim with special sauce
+export EDITOR="vim"
+export SHELL="bash"
+
+# ==================
+# Vim
+# ==================
+# open macvim anywhere
+alias mvim='open -a macvim'
+
+# ==================
+# Webstorm
+# ==================
+# open webstorm from any where
 alias webstorm='open -a webstorm'
 
+# ==================
+# Rubymine
+# ==================
+alias rubymine='open -a rubymine'
+
+# ==================
+# Lighttable
+# ==================
+alias light='open -a "LightTable"'
 # ==================
 # Path
 # This is a list of all directories in which to look for commands, scripts and programs
 # ==================
-
 # Load RVM into a shell session *as a function*
 # [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 # Add RVM to PATH for scripting
@@ -87,8 +118,6 @@ PATH="/usr/local/heroku/bin:$PATH"
 # =================
 # Git
 # =================
-# Alias for hub http://hub.github.com/
-# alias git='hub'
 # Undo a git push
 alias undopush="git push -f origin HEAD^:master"
 # undo a commit
@@ -115,6 +144,7 @@ get_git_branch() {
     branch_name="(unknown)"
     printf $branch_name
 }
+
 # Git status information
 prompt_git() {
     local git_info git_state uc us ut st
@@ -152,6 +182,7 @@ prompt_git() {
 # Hide/show all desktop icons (useful when presenting)
 alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
 alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
+
 # Start an HTTP server from a directory, optionally specifying the port
 function server() {
   local port="${1:-8000}"
@@ -160,6 +191,7 @@ function server() {
   # And serve everything as UTF-8 (although not technically correct, this doesn’t break anything for binary files)
   python -c $'import SimpleHTTPServer;\nmap = SimpleHTTPServer.SimpleHTTPRequestHandler.extensions_map;\nmap[""] = "text/plain";\nfor key, value in map.items():\n\tmap[key] = value + ";charset=UTF-8";\nSimpleHTTPServer.test();' "$port"
 }
+
 # List any open internet sockets on port 3000. Useful if a rogue server is running
 # http://www.akadia.com/services/lsof_intro.html
 alias rogue='lsof -i TCP:3000'
@@ -247,6 +279,7 @@ genstats(){
   echo "------------------------------------------"
 }
 alias genstats=genstats
+
 #----------------------
 # style the prompt
 # ---------------------
@@ -284,7 +317,21 @@ if [ -f ~/.extra ]; then
 fi
 
 # ======================
+# mysql
+# ======================
+export MYSQL_HOME=/usr/local/mysql
+alias start_mysql='sudo $MYSQL_HOME/bin/mysqld_safe &'
+alias stop_mysql='sudo $MYSQL_HOME/bin/mysqladmin shutdown'
+# gimme all the things
+PATH="/usr/local/mysql/bin:$PATH"
+
+# ======================
 # rbenv
 # ======================
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+
+
+
+
+export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
