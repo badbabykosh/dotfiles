@@ -2,7 +2,6 @@
 I'm only putting these up here in case my system explodes, or in case I get another urge to go on a dotfile hackfest that goes totally awry and needs some source control rescue. Why the README then? Well, github strongly recommended having one!
 
 ## Pre-Requisites
-* ZSH (I use 4.3.15, YMMV)
 * VCPrompt
 * Git
 * reattach-to-user-namespace ( brew install reattach-to-user-namespace )
@@ -42,18 +41,9 @@ Pretty minimalist.
 * Command-T
 * AckVim
 * NerdTREE
-* [Powerline](https://github.com/Lokaltog/powerline)
-```
-quick-ish install
-note: remove duplicate pythons--brew uninstall python ...leaving only original system python.
-you may have to then install pip:
-su (become root) $ easy_install pip
-then install powerline:
-su (become root) $ pip install https://github.com/Lokaltog/powerline/tarball/develop
-```
 * Pathogen (install first....then use this to install vim-airline)
 * [Air-powerline](https://github.com/vim-airline/vim-airline) (vim-airline) - no python required
-* [Powerline-fonts](https://github.com/powerline/fonts)
+* [Powerline-fonts](https://github.com/powerline/fonts) - (NOTE: set powerline font in iterm2)
 * Fugitive
 * TComment
 * A few syntax files, who even cares about those.
