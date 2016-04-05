@@ -4,7 +4,6 @@ I'm only putting these up here in case my system explodes, or in case I get anot
 ## Pre-Requisites
 * ZSH (I use 4.3.15, YMMV)
 * VCPrompt
-* RVM
 * Git
 * reattach-to-user-namespace ( brew install reattach-to-user-namespace )
 * VIM compiled with Ruby Support: http://stackoverflow.com/questions/3794895/installing-vim-with-ruby-support-ruby or MacVim
