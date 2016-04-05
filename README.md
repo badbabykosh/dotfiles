@@ -43,11 +43,26 @@ Pretty minimalist.
 * AckVim
 * NerdTREE
 * Powerline 
-note: powerline has a problem on osx 10.8.2 - remove duplicate pythons--brew uninstall python ...leaving only original system python.
+```
+quick-ish install...for...https://github.com/Lokaltog/powerline
+
+note: remove duplicate pythons--brew uninstall python ...leaving only original system python.
 you may have to then install pip:
 su (become root) $ easy_install pip
 then install powerline:
 su (become root) $ pip install https://github.com/Lokaltog/powerline/tarball/develop
+```
+* Air-powerline (vim-airline)
+```
+no python required
+https://github.com/vim-airline/vim-airline
+
+```
+* Powerline-fonts
+```
+you want the fonts...
+https://github.com/powerline/fonts
+```
 * Fugitive
 * TComment
 * A few syntax files, who even cares about those.
