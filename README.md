@@ -41,7 +41,7 @@ Pretty minimalist.
 * Command-T
 * AckVim
 * NerdTREE
-* Pathogen (install first....then use this to install vim-airline)
+* [Pathogen](https://github.com/tpope/vim-pathogen) (install first....then use this to install vim-airline)
 * [Air-powerline](https://github.com/vim-airline/vim-airline) (vim-airline) - no python required
 * [Powerline-fonts](https://github.com/powerline/fonts) - (NOTE: set powerline font in iterm2)
 * Fugitive
