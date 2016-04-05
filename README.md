@@ -1,5 +1,5 @@
 # Congratulations, you found my dotfiles repo!
-I'm only putting these up here in case my system explodes, or in case I get another urge to go on a dotfile hackfest that goes totally awry and needs some source control rescue. Why the README then? Well, github strongly recommended having one!
+I'm only putting these up here in case my system explodes, or in case I get another urge to go on a dotfile hackfest that goes totally off and needs some source control rescue. Why the README then? Well, github strongly recommends having one!
 
 ## Pre-Requisites
 * VCPrompt
@@ -77,3 +77,7 @@ Leader Stuff
 or
 
 brew install vcprompt
+
+Note:
+* your .gitignore_global file may need refreashing. run this.
+git config --global core.excludesfile ~/.gitignore_global
