@@ -78,3 +78,7 @@ Leader Stuff
 
 ## A few notes on VCPrompt
 > curl https://raw.github.com/djl/vcprompt/v1.0.1/bin/vcprompt > /usr/local/bin/vcprompt && sudo chmod +x /usr/local/bin/vcprompt
+
+or
+
+brew install vcprompt
