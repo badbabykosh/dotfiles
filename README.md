@@ -38,14 +38,14 @@ basically this prompt shows hostname:directory(branch+*?) (where the +*? denote 
 Pretty minimalist.
 
 #### Plugins
-* Command-T
-* AckVim
-* NerdTREE
+* AckVim - already installed
+* [Command-T](https://github.com/wincent/command-t)
+* [NerdTREE](https://github.com/scrooloose/nerdtree)
 * [Pathogen](https://github.com/tpope/vim-pathogen) (install first....then use this to install vim-airline)
 * [Air-powerline](https://github.com/vim-airline/vim-airline) (vim-airline) - no python required
 * [Powerline-fonts](https://github.com/powerline/fonts) - (NOTE: set powerline font in iterm2)
-* Fugitive
-* TComment
+* [Fugitive](https://github.com/tpope/vim-fugitive)
+* [TComment](https://github.com/tomtom/vimtlib/blob/master/INSTALL.TXT)
 * A few syntax files, who even cares about those.
 
 #### Bindings In Normal Mode
