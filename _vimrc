@@ -37,8 +37,10 @@ set nocompatible
 set laststatus=2
 set ignorecase
 set smartcase
-
 "set cursorline row and cursorcolumn
+
+"" speed up mode switching
+set timeoutlen=1000 ttimeoutlen=0
 
 nmap <Leader>p orequire "pry"<CR>binding.pry<ESC>;  " pry insertion
 vnoremap . :norm.<CR>                               " in visual mode, "." will for each line, go into normal mode and execute the "."
