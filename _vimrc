@@ -178,7 +178,6 @@ endfunction
 command! -nargs=0 Trim :call Trim()
 nnoremap <silent> <Leader>cw :Trim<CR>
 
-""https://github.com/mileszs/ack.vim
 let g:ackprg="ack -H --nocolor --nogroup --column"
 
 ""Open a new tab and search for something.
