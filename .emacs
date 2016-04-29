@@ -1,5 +1,6 @@
 (require 'package)
 
+;; NOTE: you will need emacs prelude to create the emacs.d directory-https://github.com/bbatsov/prelude
 ;; get vim-mode going
 (add-to-list 'load-path "~/.emacs.d/evil")
 (require 'evil)
