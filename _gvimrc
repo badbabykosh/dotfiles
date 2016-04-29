@@ -1,17 +1,15 @@
 if has("mac")
   set guifont=Monaco\ for\ Powerline
-  set fuopt=maxhorz,maxvert
-  set fu
+"  set fuopt=maxhorz,maxvert
+  set fu "start full screen
   set vb "shuts up the bell sounds from macVim
-  map <Leader>fs :set invfu<CR>
+  map <Leader>fs :set invfu<CR> " \fs for full screen
 end
 
 set guioptions-=T
 set guioptions-=m
 set guioptions-=r
 set guioptions-=L
-
-set columns=140
 
 
 "colorscheme candycode
@@ -43,4 +41,3 @@ function! LoadSession()
 endfunction
 au VimEnter * nested :call LoadSession()
 au VimLeave * :call MakeSession()
-
